@@ -10,6 +10,7 @@ services:
       - ../src:/app/src
       - ../data:/app/data
       - ../scripts:/app/scripts
+      - ../.env:/app/.env
     environment:
       - DISPLAY=:99
       - PYTHONPATH=/app
@@ -22,8 +23,8 @@ services:
         google-chrome --version &&
         echo '🔧 ChromeDriver 버전 확인:' &&
         chromedriver --version &&
-        echo '🔄 법령 데이터 수집 및 파싱 실행...' &&
-        python scripts/collect_and_parse_laws.py
+        echo '🔄 법령 문서 처리 및 임베딩 실행...' &&
+        python scripts/process_documents_and_embed.py
       "
 
 networks:
