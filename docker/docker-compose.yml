@@ -8,6 +8,8 @@ services:
     container_name: law-agent
     volumes:
       - ../src:/app/src
+      - ../data:/app/data
+      - ../scripts:/app/scripts
     environment:
       - DISPLAY=:99
       - PYTHONPATH=/app
@@ -20,8 +22,8 @@ services:
         google-chrome --version &&
         echo '🔧 ChromeDriver 버전 확인:' &&
         chromedriver --version &&
-        echo '🔄 테스트 실행...' &&
-        python src/data_collector/web_scraper.py
+        echo '🔄 법령 데이터 수집 및 파싱 실행...' &&
+        python scripts/collect_and_parse_laws.py
       "
 
 networks:
