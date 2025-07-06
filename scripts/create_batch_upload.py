@@ -49,6 +49,7 @@ def main():
         logger.info("   - 총 200개 데이터 처리 예정")
         logger.info("   - 예상 소요 시간: 약 20분")
         
+        # TODO 제출시 test_limit=None으로 변경
         evaluation_results = evaluator.run_evaluation(test_limit=5)
         
         if not evaluation_results:

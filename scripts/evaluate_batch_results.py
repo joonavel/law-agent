@@ -49,7 +49,8 @@ def main():
         logger.info("   - 배치 처리 완료까지 최대 10분 소요될 수 있습니다")
         logger.info("   - 상태 체크 간격: 30초")
         
-        max_wait_time = 600  # 10분
+        # TODO 제출시 600초로 변경
+        max_wait_time = 60  # 10분
         check_interval = 30  # 30초
         elapsed_time = 0
         

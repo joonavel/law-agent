@@ -197,15 +197,15 @@ class LawScraper:
 
 # 법령 URL 딕셔너리 (사용자 프로토타입에서 가져옴)
 LAW_URL_DICT = {
-    "형법": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%98%95%EB%B2%95",
-    "형사소송법": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%98%95%EC%82%AC%EC%86%8C%EC%86%A1%EB%B2%95",
-    "폭력행위등처벌에관한법률": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%8F%AD%EB%A0%A5%ED%96%89%EC%9C%84%EB%93%B1%EC%B2%98%EB%B2%8C%EC%97%90%EA%B4%80%ED%95%9C%EB%B2%95%EB%A5%A0",
-    "부정수표단속법": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%B6%80%EC%A0%95%EC%88%98%ED%91%9C%EB%8B%A8%EC%86%8D%EB%B2%95",
-    "도로교통법": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%8F%84%EB%A1%9C%EA%B5%90%ED%86%B5%EB%B2%95",
-    "특정범죄가중처벌등에관한법률": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%8A%B9%EC%A0%95%EB%B2%94%EC%A3%84%EA%B0%80%EC%A4%91%EC%B2%98%EB%B2%8C%EB%93%B1%EC%97%90%EA%B4%80%ED%95%9C%EB%B2%95%EB%A5%A0",
-    "마약류불법거래방지에관한특례법": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%A7%88%EC%95%BD%EB%A5%98%EB%B6%88%EB%B2%95%EA%B1%B0%EB%9E%98%EB%B0%A9%EC%A7%80%EC%97%90%EA%B4%80%ED%95%9C%ED%8A%B9%EB%A1%80%EB%B2%95/",
-    "소송촉진등에관한특례법": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%86%8C%EC%86%A1%EC%B4%89%EC%A7%84%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%ED%8A%B9%EB%A1%80%EB%B2%95",
-    "벌금미납자의사회봉사집행에관한특례법": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%B2%8C%EA%B8%88%EB%AF%B8%EB%82%A9%EC%9E%90%EC%9D%98%EC%82%AC%ED%9A%8C%EB%B4%89%EC%82%AC%EC%A7%91%ED%96%89%EC%97%90%EA%B4%80%ED%95%9C%ED%8A%B9%EB%A1%80%EB%B2%95/"
+    "형법": "https://www.law.go.kr/법령/형법",
+    "형사소송법": "https://www.law.go.kr/법령/형사소송법",
+    "폭력행위등처벌에관한법률": "https://www.law.go.kr/법령/폭력행위등처벌에관한법률",
+    "부정수표단속법": "https://www.law.go.kr/법령/부정수표단속법",
+    "도로교통법": "https://www.law.go.kr/법령/도로교통법",
+    "특정범죄가중처벌등에관한법률": "https://www.law.go.kr/법령/특정범죄가중처벌등에관한법률",
+    "마약류불법거래방지에관한특례법": "https://www.law.go.kr/법령/마약류불법거래방지에관한특례법/",
+    "소송촉진등에관한특례법": "https://www.law.go.kr/법령/소송촉진등에관한특례법",
+    "벌금미납자의사회봉사집행에관한특례법": "https://www.law.go.kr/법령/벌금미납자의사회봉사집행에관한특례법"
 }
 
 

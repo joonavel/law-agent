@@ -51,7 +51,7 @@ def main():
     # OpenAI API 키 확인
     if not os.getenv("OPENAI_API_KEY"):
         logger.error("OpenAI API 키가 설정되지 않았습니다. .env 파일에 OPENAI_API_KEY를 설정하세요.")
-        return
+        sys.exit(1)
     
     try:
         # 1. Document 처리 모듈 초기화
