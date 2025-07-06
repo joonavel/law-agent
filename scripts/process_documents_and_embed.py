@@ -12,7 +12,7 @@ from typing import Dict, Any
 from dotenv import load_dotenv
 
 # 프로젝트 루트 디렉터리를 Python path에 추가
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(project_root))
 
 # .env 파일 로드
