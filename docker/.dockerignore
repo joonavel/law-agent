@@ -1,0 +1,50 @@
+# Git 파일
+.git/
+.gitignore
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 가상환경
+venv/
+env/
+.env
+.venv/
+
+# IDE 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 테스트 결과 및 캐시
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# 임시 파일
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# 테스트 결과
+test_results/
+
+# Poetry 캐시
+.poetry/
+
+# 문서
+docs/
+
+# Docker 파일들
+Dockerfile
+docker-compose.yml
+.dockerignore 

@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  law-agent:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    container_name: law-agent
+    volumes:
+      - ../src:/app/src
+    environment:
+      - DISPLAY=:99
+      - PYTHONPATH=/app
+    networks:
+      - law-agent-network
+    command: >
+      bash -c "
+        echo '🚀 Law Agent 시작...' &&
+        echo '📊 Chrome 버전 확인:' &&
+        google-chrome --version &&
+        echo '🔧 ChromeDriver 버전 확인:' &&
+        chromedriver --version &&
+        echo '🔄 테스트 실행...' &&
+        python src/data_collector/web_scraper.py
+      "
+
+networks:
+  law-agent-network:
+    driver: bridge
