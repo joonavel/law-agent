@@ -55,13 +55,22 @@ echo "OPENAI_API_KEY=your-api-key-here" > .env
 ### 2️⃣ 컨테이너 셋업 및 의존성 설치
 
 ```bash
-# Docker 컨테이너 빌드 및 시작
+# Docker 이미지 빌드 (처음 실행 시 또는 의존성 변경 후, 약 3~4분 소요)
 cd docker
+docker-compose build
+
+# Docker 컨테이너 시작
 docker-compose up -d
 
 # 컨테이너 상태 확인
 docker-compose ps
 ```
+
+> 💡 **`docker-compose build` 언제 사용?**
+> - **처음 실행 시**: 이미지가 아직 없을 때
+> - **Dockerfile 수정 후**: 컨테이너 환경 변경 시
+> - **의존성 변경 후**: pyproject.toml 수정 시
+> - **강제 재빌드**: `--no-cache` 옵션으로 캐시 무시
 
 ### 3️⃣ Agent System 구축 및 평가 실행
 

@@ -50,7 +50,7 @@ def main():
         logger.info("   - 상태 체크 간격: 30초")
         
         # TODO 제출시 600초로 변경
-        max_wait_time = 60  # 10분
+        max_wait_time = 600  # 10분
         check_interval = 30  # 30초
         elapsed_time = 0
         
