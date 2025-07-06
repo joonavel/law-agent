@@ -12,7 +12,6 @@ __pycache__/
 # 가상환경
 venv/
 env/
-.env
 .venv/
 
 # IDE 파일

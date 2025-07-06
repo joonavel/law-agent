@@ -51,4 +51,4 @@ ENV PYTHONPATH=/app
 ENV DISPLAY=:99
 
 # 기본 명령어 설정
-CMD ["python", "src/data_collector/web_scraper.py"] 
+CMD ["python", "scripts/create_batch_upload.py"]

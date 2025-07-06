@@ -23,8 +23,8 @@ services:
         google-chrome --version &&
         echo '🔧 ChromeDriver 버전 확인:' &&
         chromedriver --version &&
-        echo '🔄 통합 워크플로우 테스트 실행...' &&
-        python scripts/test_integrated_workflow.py
+        echo '🎯 배치 결과 평가 시작...' &&
+        python scripts/evaluate_batch_results.py
       "
 
 networks:
