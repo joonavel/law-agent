@@ -18,13 +18,13 @@ services:
       - law-agent-network
     command: >
       bash -c "
-        echo '🚀 Law Agent 시작...' &&
+        echo '🚀 Law Agent 통합 워크플로우 테스트 시작...' &&
         echo '📊 Chrome 버전 확인:' &&
         google-chrome --version &&
         echo '🔧 ChromeDriver 버전 확인:' &&
         chromedriver --version &&
-        echo '🔄 법령 문서 처리 및 임베딩 실행...' &&
-        python scripts/process_documents_and_embed.py
+        echo '🔄 통합 워크플로우 테스트 실행...' &&
+        python scripts/test_integrated_workflow.py
       "
 
 networks:
