@@ -213,15 +213,16 @@ def main():
     """메인 함수 - 테스트용"""
     scraper = LawScraper(headless=True)
     
-    # 단일 법령 테스트
-    test_url = LAW_URL_DICT["형법"]
-    result = scraper.scrape_law_content(test_url)
+    # 테스트 약 1분 소요
+    for decree in LAW_URL_DICT.keys():
+        test_url = LAW_URL_DICT[decree]
+        result = scraper.scrape_law_content(test_url)
     
-    if result:
-        main_rules, _ = result
-        print(f"메인 규칙 수: {len(main_rules)}")
-    else:
-        print("스크래핑 실패")
+        if result:
+            main_rules, _ = result
+            print(f"{decree} 조문 수: {len(main_rules)}")
+        else:
+            print(f"{decree} 스크래핑 실패")
 
 
 if __name__ == "__main__":
