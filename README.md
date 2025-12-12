@@ -1,5 +1,8 @@
 # Law Agent System with KMMLU Evaluation
 
+## 프로젝트 리포트
+[1차 프로젝트 리포트](./reports/1st_project_report.pdf)
+
 ## 🎯 프로젝트 개요
 
 이 프로젝트는 **한국 형법 전문 AI 에이전트 시스템**을 구축하고, KMMLU(Korean Massive Multitask Language Understanding) 벤치마크의 Criminal-Law 카테고리를 사용하여 성능을 평가하는 완전 자동화된 시스템입니다.
