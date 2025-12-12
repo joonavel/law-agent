@@ -1,7 +1,7 @@
 # Law Agent System with KMMLU Evaluation
 
 ## 프로젝트 리포트
-[1차 프로젝트 리포트](./reports/1st_project_report.pdf)
+[1차 프로젝트 리포트](./reports/1st_report.pdf)
 
 ## 🎯 프로젝트 개요
 
